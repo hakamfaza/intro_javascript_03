@@ -14,7 +14,7 @@
 // const main = async () => {
 //   try {
 //     console.log('Loading...');
-//     const data = await makeID('Muhamad Hakam Faza', 15)
+//     const data = await makeID('Muhamad Hakam Faza', 19)
 //     console.log(data)
 //   }
 //   catch (err) {
@@ -31,4 +31,14 @@
 // //     console.log(err)
 // //   })
 
-
+// const saying = (subject, sentence) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(`${subject}, ${sentence}`);
+//     })
+//   })
+// }
+// saying('Halo semuanya', 'selamat pagi!')
+//   .then((res) => {
+//     console.log(res)
+//   })

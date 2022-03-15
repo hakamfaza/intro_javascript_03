@@ -1,17 +1,16 @@
-// import fetch from "node-fetch";
+const fetch = require('node-fetch')
 
-// fetch('https://jsonplaceholder.typicode.com/users')
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((myJson) => {
-//     console.log(myJson);
-// 	});
-
-
-import fetch from 'node-fetch';
-
-const response = await fetch('https://jsonplaceholder.typicode.com/users');
-const data = await response[0].json();
-
-console.log(data);
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then((response) => {
+    return response.json();
+  })
+  .then((json) => {
+    const resultName = json.forEach((element) => {
+      const callName = element.name;
+      return console.log(callName)
+    });
+    // console.log(resultName())
+  })
+  .catch(() => {
+    console.log('ERROR!')
+  })
