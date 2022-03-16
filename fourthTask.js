@@ -10,6 +10,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
       console.log(callName)
     });
   })
-  .catch(() => {
-    console.log('ERROR!')
+  .catch((err) => {
+    console.log(err)
   })
