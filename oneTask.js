@@ -14,31 +14,31 @@ const cekHariKerja = (day) => {
   })
 }
 
-// cekHariKerja('ahad')
-//   .then ((res) => {
-//     console.log(res)
-//   })
-//   .catch((err) => {
-//     console.log(err.message)
-//   })
+cekHariKerja('ahad')
+  .then ((res) => {
+    console.log(res)
+  })
+  .catch((err) => {
+    console.log(err.message)
+  })
 
 // Then catch digunakan dengan cara menggunakan dua paremeter di arrow function promise, kemudian memanggilnya menggunakan nama function.then().catch()
 // .then() menghasilkan output true
 // .catch() menghasilkan output false
 
 
-const main = async () => {
-  try {
-    console.log('Loading...');
-    const data = await cekHariKerja('senin');
-    console.log(data)
-  }
-  catch (err) {
-    console.log(err)
-  }
-}
+// const main = async () => {
+//   try {
+//     console.log('Loading...');
+//     const data = await cekHariKerja('senin');
+//     console.log(data)
+//   }
+//   catch (err) {
+//     console.log(err)
+//   }
+// }
 
-main()
+// main()
 
 // trycatch digunakan untuk mengkondisikan output, jika semua output true maka program akan dijalankan. Jika terdapat output yang false maka akan di lemparkan ke catch.
 

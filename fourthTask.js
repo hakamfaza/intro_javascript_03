@@ -5,11 +5,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
     return response.json();
   })
   .then((json) => {
-    const resultName = json.forEach((element) => {
+    json.forEach((element) => {
       const callName = element.name;
-      return console.log(callName)
+      console.log(callName)
     });
-    // console.log(resultName())
   })
   .catch(() => {
     console.log('ERROR!')

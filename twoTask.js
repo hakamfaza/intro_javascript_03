@@ -27,7 +27,7 @@ const main = async () => {
     getMonth(resultMonth);
   }
   catch (err) {
-    throw err
+    console.log(err)
   }
 }
 
