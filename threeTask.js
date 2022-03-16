@@ -1,7 +1,7 @@
 const makeID = (nama, age) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const isAge = age > 17;
+      const isAge = age >= 17;
       if (isAge) {
         resolve(`Create ID Card ${nama}`)
       } else {
